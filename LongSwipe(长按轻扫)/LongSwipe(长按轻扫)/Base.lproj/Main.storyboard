@@ -16,22 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeY-wS-sAB">
-                                <rect key="frame" x="40" y="84" width="240" height="128"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tk" translatesAutoresizingMaskIntoConstraints="NO" id="Wg4-ms-qs9">
+                                <rect key="frame" x="26" y="41" width="269" height="318"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="redView" destination="8bC-Xf-vdC" id="8aA-uK-0IL"/>
+                        <outlet property="tkimage" destination="Wg4-ms-qs9" id="0SM-HK-cdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="51" y="262"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tk" width="2560" height="1600"/>
+    </resources>
 </document>

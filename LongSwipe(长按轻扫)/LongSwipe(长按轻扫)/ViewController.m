@@ -9,7 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIView *redView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *tkimage;
 
 @end
 
@@ -22,18 +23,29 @@
     
 //    [self  longtest];
     
-    [self  testSwipe];
+//    [self  testSwipe];
+    
+    UIRotationGestureRecognizer *amrotat =[[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(roateview:)];
+    
+    
+    [self.tkimage  addGestureRecognizer:amrotat];
     
     
 }
 
+//旋转
+-(void)roateview: (UIRotationGestureRecognizer *) amrotat{
+    
+    self.tkimage.transform =CGAffineTransformMakeRotation(amrotat.rotation);
+    
+}
 
 //轻扫
 -(void) testSwipe{
     UISwipeGestureRecognizer *swipe =[[UISwipeGestureRecognizer  alloc] initWithTarget:self action:@selector(swipeclick)];
     
     swipe.direction  =UISwipeGestureRecognizerDirectionLeft;
-    [self.redView  addGestureRecognizer:swipe];
+//    [self.redView  addGestureRecognizer:swipe];
     
 }
 
@@ -58,7 +70,7 @@
     longPress.allowableMovement=10;
     
     //把对象设置给监听的对象
-    [self.redView addGestureRecognizer:longPress];
+//    [self.redView addGestureRecognizer:longPress];
 }
 
 -(void)  longpressVIew {
