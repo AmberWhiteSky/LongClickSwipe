@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tk" translatesAutoresizingMaskIntoConstraints="NO" id="Wg4-ms-qs9">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tk" translatesAutoresizingMaskIntoConstraints="NO" id="Wg4-ms-qs9">
                                 <rect key="frame" x="26" y="41" width="269" height="318"/>
                                 <animations/>
                             </imageView>
